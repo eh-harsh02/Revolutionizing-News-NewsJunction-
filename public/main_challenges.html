@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Web Page</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f1f1f1; /* Light grey background */
+        color: #000; /* Black text color */
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        background-color: crimson; /* Crimson background color for header */
+        color: #fff; /* White text color for header */
+        padding: 20px;
+        text-align: center;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .content {
+        padding: 20px;
+      }
+      .challenge-button {
+        background-color: crimson; /* Crimson background color for button */
+        color: #fff; /* White text color for button */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .challenge-button:hover {
+        background-color: darkred; /* Dark red color on button hover */
+      }
+
+      /* Added container class styles */
+      .container {
+        max-width: 800px; /* Increased max-width */
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f1f1f1; /* Light grey background */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <script>
+      function redirectToPage(pageURL) {
+        window.location.href = pageURL;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Discover Exciting Challenges at NewsJunction!</h1>
+      </div>
+      <div class="content">
+        <p>Explore our ongoing challenges and submit your entries.</p>
+
+        <!-- Button for a challenge -->
+        <button
+          class="challenge-button"
+          onclick="redirectToPage('challenges.html')"
+        >
+          View Challenges
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

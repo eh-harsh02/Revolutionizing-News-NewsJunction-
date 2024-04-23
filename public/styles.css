@@ -1,0 +1,839 @@
+:root {
+  --border: 1px solid #ccc;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* subscribe button */
+.subscribe-btn {
+  border: 1px solid #ccc;
+  padding: 3px 8px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.subscribe-btn:hover {
+  background-color: #ccc;
+  color: white;
+}
+
+/* Navigation Bar */
+header {
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+nav {
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  /* background-color: #fff; */
+}
+
+nav .logo {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+}
+
+nav .logo span {
+  color: crimson;
+}
+
+nav .menu-list {
+  text-align: center;
+  padding-block-start: 0.5rem;
+  /* background-color: antiquewhite; */
+}
+
+nav .menu-list a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 300;
+  margin-inline-end: 2rem;
+  transition: 0.2s linear;
+}
+
+nav .menu-list a:hover {
+  color: crimson;
+}
+
+#hamburger {
+  display: none;
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 8rem;
+  padding: 2rem;
+  border-inline: var(--border);
+  font-family: "Playfair Display", serif;
+  /* height: 400vh; */
+}
+
+main .content-one {
+  display: flex;
+  padding-block-end: 2rem;
+  border-bottom: var(--border);
+}
+
+main .content-one .one {
+  flex: 1 1 40%;
+  padding-inline-end: 2rem;
+  border-inline-end: var(--border);
+}
+
+main .content-one h4,
+.content-two h4 {
+  color: crimson;
+  margin-block-end: 1rem;
+}
+
+main .content-one h3 {
+  font-size: 2rem;
+  margin-block-end: 1rem;
+}
+
+main .content-one .two {
+  flex: 1 1 60%;
+  padding-inline-start: 2rem;
+}
+
+main .content-one .two img {
+  width: 100%;
+}
+
+main .content-one .two figcaption {
+  color: #999;
+}
+
+main .content-two {
+  padding-block: 2rem;
+  display: flex;
+}
+
+main .content-two .one {
+  flex: 1;
+  padding-inline-end: 2rem;
+  border-inline-end: var(--border);
+}
+
+.content-two .one h3,
+.content-two .two h3,
+.content-two .three h3 {
+  font-size: 1.3rem;
+  margin-block-end: 0.5rem;
+}
+
+main .content-two .two {
+  flex: 1;
+  padding-inline: 2rem;
+  border-inline-end: var(--border);
+}
+
+main .content-two .three {
+  flex: 1;
+  padding-inline-start: 2rem;
+}
+
+/* The Latest Content */
+.latest {
+  display: flex;
+}
+
+.latest .latest-content {
+  flex: 3;
+  border-right: var(--border);
+  margin-right: 2rem;
+  /* cursor: pointer; */
+}
+
+.latest .latest-content .news {
+  margin-block: 1rem;
+}
+
+.latest .latest-content figure {
+  display: flex;
+  align-items: center;
+}
+
+.latest .latest-content img {
+  flex: 1;
+  width: 100%;
+  height: 8rem;
+  object-fit: fill;
+  margin-right: 1rem;
+}
+
+.latest .latest-content figcaption {
+  flex: 2;
+  font-size: 1.5rem;
+}
+
+.latest aside {
+  flex: 1;
+}
+
+.latest aside h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: var(--border);
+}
+
+.latest aside img {
+  width: 100%;
+  border-radius: 50%;
+  margin-block: 1rem;
+}
+
+.latest aside figcaption {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-block: 1rem;
+}
+
+/* india Content */
+main > h2 {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  padding-block: 1rem;
+  border-top: 2px solid black;
+  border-bottom: var(--border);
+  font-size: 2rem;
+  color: crimson;
+}
+
+main .india {
+  display: flex;
+  margin-block: 2rem;
+}
+
+main .india .india-one {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-inline-end: 2rem;
+  border-right: var(--border);
+}
+.india .india-one .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+.india .india-one .content-up h3,
+.india .india-one .content-down h3,
+.india .india-two h3,
+.india .india-three .content-up h3,
+.india .india-three .content-down h3 {
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+main .india .india-two {
+  flex: 2;
+  padding-inline: 2rem;
+}
+.india .india-two img {
+  width: 100%;
+}
+
+.india .india-three {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 2rem;
+  border-left: var(--border);
+}
+
+.india .india-three .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+
+/* World Content */
+main .world {
+  display: flex;
+  margin-block: 2rem;
+}
+
+main .world .world-one {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-inline-end: 2rem;
+  border-right: var(--border);
+}
+.world .world-one .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+.world .world-one .content-up h3,
+.world .world-one .content-down h3,
+.world .world-two h3,
+.world .world-three .content-up h3,
+.world .world-three .content-down h3 {
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+main .world .world-two {
+  flex: 2;
+  padding-inline: 2rem;
+}
+.world .world-two img {
+  width: 100%;
+}
+
+.world .world-three {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 2rem;
+  border-left: var(--border);
+}
+
+.world .world-three .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+
+/* Politics Content */
+main .politics {
+  display: flex;
+  margin-block: 2rem;
+}
+
+main .politics .politics-one {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-inline-end: 2rem;
+  border-right: var(--border);
+}
+.politics .politics-one .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+.politics .politics-one .content-up h3,
+.politics .politics-one .content-down h3,
+.politics .politics-two h3,
+.politics .politics-three .content-up h3,
+.politics .politics-three .content-down h3 {
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+main .politics .politics-two {
+  flex: 2;
+  padding-inline: 2rem;
+}
+.politics .politics-two img {
+  width: 100%;
+}
+
+.politics .politics-three {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 2rem;
+  border-left: var(--border);
+}
+
+.politics .politics-three .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+
+/* Business Content */
+main .business {
+  display: flex;
+  margin-block: 2rem;
+}
+
+main .business .business-one {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-inline-end: 2rem;
+  border-right: var(--border);
+}
+.business .business-one .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+.business .business-one .content-up h3,
+.business .business-one .content-down h3,
+.business .business-two h3,
+.business .business-three .content-up h3,
+.business .business-three .content-down h3 {
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+main .business .business-two {
+  flex: 2;
+  padding-inline: 2rem;
+}
+.business .business-two img {
+  width: 100%;
+}
+
+.business .business-three {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 2rem;
+  border-left: var(--border);
+}
+
+.business .business-three .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+
+/* Technology Content */
+main .technology {
+  display: flex;
+  margin-block: 2rem;
+}
+
+main .technology .technology-one {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-inline-end: 2rem;
+  border-right: var(--border);
+}
+.technology .technology-one .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+.technology .technology-one .content-up h3,
+.technology .technology-one .content-down h3,
+.technology .technology-two h3,
+.technology .technology-three .content-up h3,
+.technology .technology-three .content-down h3 {
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+main .technology .technology-two {
+  flex: 2;
+  padding-inline: 2rem;
+}
+.technology .technology-two img {
+  width: 100%;
+}
+
+.technology .technology-three {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 2rem;
+  border-left: var(--border);
+}
+
+.technology .technology-three .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+
+/* Entertainment Content */
+main .entertainment {
+  display: flex;
+  margin-block: 2rem;
+}
+
+main .entertainment .entertainment-one {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-inline-end: 2rem;
+  border-right: var(--border);
+}
+.entertainment .entertainment-one .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+.entertainment .entertainment-one .content-up h3,
+.entertainment .entertainment-one .content-down h3,
+.entertainment .entertainment-two h3,
+.entertainment .entertainment-three .content-up h3,
+.entertainment .entertainment-three .content-down h3 {
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+main .entertainment .entertainment-two {
+  flex: 2;
+  padding-inline: 2rem;
+}
+.entertainment .entertainment-two img {
+  width: 100%;
+}
+
+.entertainment .entertainment-three {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 2rem;
+  border-left: var(--border);
+}
+
+.entertainment .entertainment-three .content-down {
+  padding-block-start: 2rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+}
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+footer .up {
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .up h2 {
+  font-size: 2rem;
+}
+
+footer .up h2 span {
+  color: crimson;
+}
+
+footer .up .contact {
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+}
+
+footer .up .contact a {
+  color: black;
+}
+
+footer .up .contact a:hover {
+  color: crimson;
+}
+
+footer .down {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .down .information {
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+  border-block: 1px solid black;
+}
+
+footer .down .information a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2rem;
+}
+
+footer .down .information a:hover {
+  color: crimson;
+}
+
+footer .down p {
+  padding-block: 2rem;
+  text-align: center;
+}
+
+/* Responsive */
+/* Laptop */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+
+  #hamburger {
+    display: inline-block;
+    color: black;
+  }
+
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav .menu-list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    width: 30rem;
+    background-color: #eaeaea;
+    transition: all 0.6s ease-in-out;
+  }
+
+  nav .menu-list.active {
+    right: 0;
+  }
+
+  nav .menu-list a {
+    display: block;
+    margin-block: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  /* Main Content */
+
+  main .content-one {
+    flex-direction: column;
+  }
+
+  main .content-one .one {
+    border-inline-end: none;
+    padding: 0;
+  }
+
+  main .content-one .two {
+    order: -1;
+    margin-block-end: 2rem;
+    padding: 0;
+  }
+
+  main .content-two {
+    flex-direction: column;
+  }
+
+  main .content-two .one {
+    padding-bottom: 1rem;
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  main .content-two .two,
+  main .content-two .three {
+    padding-inline: 0;
+    padding-block: 1rem;
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  /* The Latest Content */
+  main .latest {
+    flex-direction: column;
+  }
+
+  .latest .latest-content {
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+
+  main .latest aside {
+    margin-block: 2rem;
+  }
+
+  main .latest aside img {
+    width: 50%;
+    display: flex;
+    margin-inline: auto;
+    margin-block: 2rem;
+  }
+
+  /* India Content */
+  main .india {
+    flex-direction: column;
+  }
+
+  main .india .india-one {
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+
+  main .india .india-two {
+    order: -1;
+    padding-inline: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: var(--border);
+  }
+
+  main .india .india-three {
+    border-left: none;
+    padding-left: 0;
+    border-top: var(--border);
+    padding-top: 2rem;
+  }
+
+  /* World Content */
+  main .world {
+    flex-direction: column;
+  }
+
+  main .world .world-one {
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+
+  main .world .world-two {
+    order: -1;
+    padding-inline: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: var(--border);
+  }
+
+  main .world .world-three {
+    border-left: none;
+    padding-left: 0;
+    border-top: var(--border);
+    padding-top: 2rem;
+  }
+
+  /* Politics Content */
+  main .politics {
+    flex-direction: column;
+  }
+
+  main .politics .politics-one {
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+
+  main .politics .politics-two {
+    order: -1;
+    padding-inline: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: var(--border);
+  }
+
+  main .politics .politics-three {
+    border-left: none;
+    padding-left: 0;
+    border-top: var(--border);
+    padding-top: 2rem;
+  }
+
+  /* Business Content */
+  main .business {
+    flex-direction: column;
+  }
+
+  main .business .business-one {
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+
+  main .business .business-two {
+    order: -1;
+    padding-inline: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: var(--border);
+  }
+
+  main .business .business-three {
+    border-left: none;
+    padding-left: 0;
+    border-top: var(--border);
+    padding-top: 2rem;
+  }
+
+  /* Technology Content  */
+  main .technology {
+    flex-direction: column;
+  }
+
+  main .technology .technology-one {
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+
+  main .technology .technology-two {
+    order: -1;
+    padding-inline: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: var(--border);
+  }
+
+  main .technology .technology-three {
+    border-left: none;
+    padding-left: 0;
+    border-top: var(--border);
+    padding-top: 2rem;
+  }
+
+  /* Entertainment Content */
+  main .entertainment {
+    flex-direction: column;
+  }
+
+  main .entertainment .entertainment-one {
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+
+  main .entertainment .entertainment-two {
+    order: -1;
+    padding-inline: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: var(--border);
+  }
+
+  main .entertainment .entertainment-three {
+    border-left: none;
+    padding-left: 0;
+    border-top: var(--border);
+    padding-top: 2rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 72%;
+  }
+}

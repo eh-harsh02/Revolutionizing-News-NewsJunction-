@@ -1,0 +1,88 @@
+<!-- public/challenges.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenges</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fff; /* White background */
+        color: #000;
+      }
+      .container {
+        max-width: 800px; /* Increased max-width */
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f1f1f1; /* Light grey background */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .option {
+        margin-bottom: 20px;
+        border: 1px solid crimson; /* Crimson border */
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .option:hover {
+        background-color: #f9f9f9;
+      }
+      .option h2 {
+        margin-bottom: 5px;
+        font-size: 24px;
+        color: crimson; /* Crimson color for headings */
+      }
+      .option p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #000; /* Black text color */
+      }
+      .option button {
+        background-color: crimson; /* Crimson color for buttons */
+        color: #fff;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .option button:hover {
+        background-color: darkred; /* Dark red color on hover */
+      }
+    </style>
+    <script>
+      function redirectToPage(pageURL) {
+        window.location.href = pageURL;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ongoing and Upcoming Challenges</h1>
+
+      <!-- Challenge Details -->
+      <div class="option">
+        <h2>Challenge Title</h2>
+        <p>Description of the challenge...</p>
+        <p>Deadline: DD/MM/YYYY</p>
+        <button onclick="redirectToPage('challengeSubmission.html')">
+          Submit
+        </button>
+      </div>
+
+      <!-- Submissions -->
+      <h2>Submissions</h2>
+      <div class="option">
+        <h3>Submission Title</h3>
+        <p>Description of the submission...</p>
+        <p>Submitted by: User Name (user@example.com)</p>
+        <a href="/path/to/submission/file">Download Submission</a>
+      </div>
+
+      <!-- Repeat the above structure for each submission -->
+    </div>
+  </body>
+</html>
